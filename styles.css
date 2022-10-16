@@ -1,0 +1,26 @@
+/* 
+Type styles key
+
+font-family: 'Bakbak One', cursive;
+
+font-family: 'Prompt', sans-serif;
+Weight= 400, 500, 700
+ */
+
+
+/* Variables */
+:root {
+    --primary-color: #B52929;
+    --white-color: #ffffff;
+    --black-color: #313131;
+    --text-color: #313131;
+    --font-main: 'Prompt', 400, sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
