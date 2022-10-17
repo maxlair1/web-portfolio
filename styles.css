@@ -1,26 +1,83 @@
 /* 
 Type styles key
 
-font-family: 'Bakbak One', cursive;
-
-font-family: 'Prompt', sans-serif;
-Weight= 400, 500, 700
+font-family: 'Inter', sans-serif;
+font weights: 300,400,500,600,700,800,900
  */
 
 
 /* Variables */
 :root {
-    --primary-color: #B52929;
+    --primary-color: ;
     --white-color: #ffffff;
     --black-color: #313131;
     --text-color: #313131;
-    --font-main: 'Prompt', 400, sans-serif;
+    --font-main: 'Inter', sans-serif;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
-    --font-weight-bold: 700;
+    --font-weight-semibold: 600;
 }
 
 html {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 10pt;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: right;
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.link-active {
+    text-decoration: underline;
+}
+
+.link-faded {
+    opacity: 50%;
+}
+
+ol {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#sec-1 {
+    display: flex;
+    width: auto;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#sec-1 h1{
+    text-align: center;
+    text-justify: center;
+}
+
+
+h1 {
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55pt;
+    line-height: 95%;
 }
