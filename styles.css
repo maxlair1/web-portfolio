@@ -18,15 +18,12 @@ font weights: 300,400,500,600,700,800,900
     --font-weight-semibold: 600;
 }
 
-html {
-    margin: 0;
+html, body {
+    margin: 50;
     padding: 0;
-}
-
-body {
     font-family: var(--font-main);
     font-size: 10pt;
-    margin: 20px;
+    height:100%
 }
 
 nav {
@@ -53,31 +50,91 @@ a {
 ol {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 25px;
     margin: 0px;
     padding: 0px;
 }
 
-#sec-1 {
-    display: flex;
+#sec-1-grid {
+    display: grid;
+    margin: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#me-png{
+    grid-column: 1 / 5;
+    grid-row: 1;
+
     width: auto;
-    height: 100vh;
+    height:25%;
 
-    align-items: center;
-    justify-content: center;
+    z-index: 2;
 }
 
-#sec-1 h1{
-    text-align: center;
-    text-justify: center;
+#me-bg {
+    grid-column: 1 / 5;
+    grid-row: 1;
+
+    width: 100%;
+    height:auto;
+
+    z-index: 1;
 }
 
+#g1 {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+#g2 {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+#g3 {
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+#g4 {
+    grid-column: 4 / 5;
+    grid-row: 2;
+}
 
-h1 {
-    font-family: 'inter';
+h2 {
+    padding:0%;
+    margin:0px;
+
+    font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 55pt;
-    line-height: 95%;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    /* or 48px */
+
+    letter-spacing: -0.04em;
+
+    color: #2D2D2D;
+    grid-column: 1 / 4;
+    grid-row: 3;
 }
+
+h3 {
+    padding:0px;
+    margin:0px;
+
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 142%;
+    /* or 28px */
+
+    letter-spacing: -0.04em;
+
+    color: #2D2D2D;
+
+    grid-column: 4/ 5;
+    grid-row: 3;
+}
+
