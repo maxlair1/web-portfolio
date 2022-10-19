@@ -9,6 +9,9 @@ window.addEventListener('scroll', function(){
 
 
 
+// function viewStatus {
+//     if
+// }
 
 
 function isElementInViewPort(element){
@@ -26,12 +29,15 @@ function isElementInViewPort(element){
         
     return (isTopInViewPort && isLeftInViewPort && isBottomInViewPort && isRightInViewPort);
 }
-let topEle = document.getElementById('sec-1-grid');
+let topEle = document.getElementById('intro-name');
     console.log("is top element visible: ", isElementInViewPort(topEle));
 
-let secGrid = document.getElementById('sec-1-grid');
+let bottomEle = document.getElementById('links');
+    console.log("is bottom element visible ", isElementInViewPort(bottomEle));
 
-console.log(isElementInViewPort(secGrid));
+console.log(isElementInViewPort(topEle));
+
+while (true) isElementInViewPort(topEle)
 
 
   
