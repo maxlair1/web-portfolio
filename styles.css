@@ -74,6 +74,9 @@ nav ol {
 /* Intro Line */
 #intro-name{
    position: absolute;
+   top: 0;
+   bottom: 0;
+   
 }
 
 
