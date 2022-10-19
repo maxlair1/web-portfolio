@@ -4,6 +4,8 @@ window.addEventListener('scroll', function(){
     var value = window.scrollY
     
     title.style.top = value * .6 + 'px';
+
+    isElementInViewPort
 })
 
 
@@ -37,7 +39,8 @@ let bottomEle = document.getElementById('links');
 
 console.log(isElementInViewPort(topEle));
 
-while (true) isElementInViewPort(topEle)
-
+while (isElementInViewPort){
+    console.log("the element is visible!");
+};
 
   
