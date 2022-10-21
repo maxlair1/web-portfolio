@@ -1,3 +1,6 @@
+@import "index-styles.css";
+@import "subpages/portfolio-styles.css";
+
 /* 
 Type styles key
 
@@ -6,7 +9,7 @@ font weights: 300,400,500,600,700,800,900
  */
 
 
-/* Variables */
+/* ----------------------------------Variables---------------------------------- */
 :root {
     --primary-color: #256B49;
     --white-color: #ffffff;
@@ -18,7 +21,7 @@ font weights: 300,400,500,600,700,800,900
     --font-weight-semibold: 600;
 }
 
-/* Overalls */
+/* MAIN */
 html {
     scroll-behavior: smooth;
 }
@@ -30,7 +33,55 @@ body {
     font-size: 14pt;
 }
 
-/* Nav Bar */
+a {
+    text-decoration: none;
+}
+
+/* -------------------------------------Type Styles---------------------------------- */
+h1 {
+    color: #2D2D2D;
+
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8em;
+    line-height: 120%;
+    /* or 156px */
+    text-align: center;
+    letter-spacing: -0.04em;
+}
+
+h2 {
+    padding:0%;
+    margin:0px;
+    color: #2D2D2D;
+
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25pt;
+    line-height: 120%;
+    /* or 48px */
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    padding:0px;
+    margin:0px;
+
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14pt;
+    line-height: 142%;
+    /* or 28px */
+
+    letter-spacing: -0.04em;
+
+    color: #2D2D2D;
+}
+
+/* ----------------------------------NAVIGATION / HEADER BAR---------------------------------- */
 nav {
     display: flex;
     height: auto;
@@ -41,7 +92,7 @@ nav {
     z-index: 99999;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: var(--black-color);
 }
@@ -63,77 +114,7 @@ nav ol {
     padding: 0px;
 }
 
-#sec-1-grid {
-    display: grid;
-    margin: 50px;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    grid-auto-rows: minmax(100px, auto);
-}
-
-/* Intro Line */
-#intro-name{
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   
-}
-
-
-
-
-
-#intro-name span {
-    color: var(--primary-color);
-}
-#intro-par{
-    grid-column: 1 / 4;
-    grid-row: 5;
-}
-#intro-cap {
-    grid-column: 4/ 5;
-    grid-row: 5;
-}
-
-/* Links to Pages */
-#links {
-    text-align: right;
-
-    grid-column: 1 / 5;
-    grid-row: 8 / 10;
-}
-#links a h2{
-    display: block;
-    position:relative;
-}
-
-#links a h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left:0;
-    width: 100%;
-    height:auto;
-    background-color: hotpink;
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-}
-
-
-
-#links a h2:hover::after,
-#links a h2:focus::after {
-    opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
-}
-
-#links a:nth-child(2)
-
-#links .arrow{
-    height: 20px;
-}
-
-/* Footer Styles */
+/* ----------------------------------Footer Styles---------------------------------- */
 
 footer {
     margin:0px;
@@ -199,7 +180,7 @@ footer .social a{
 .social-icons {
     display: flex;
     flex-direction: row;
-    gap: 20px;;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -211,48 +192,3 @@ footer p {
     color: #ffffff3f;
 
 }
-
-/* Type Styles */
-h1 {
-    color: #2D2D2D;
-
-    font-family: var(--font-main);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 8em;
-    line-height: 120%;
-    /* or 156px */
-    text-align: center;
-    letter-spacing: -0.04em;
-}
-
-h2 {
-    padding:0%;
-    margin:0px;
-    color: #2D2D2D;
-
-    font-family: var(--font-main);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25pt;
-    line-height: 120%;
-    /* or 48px */
-    letter-spacing: -0.04em;
-}
-
-h3 {
-    padding:0px;
-    margin:0px;
-
-    font-family: var(--font-main);
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14pt;
-    line-height: 142%;
-    /* or 28px */
-
-    letter-spacing: -0.04em;
-
-    color: #2D2D2D;
-}
-

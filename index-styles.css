@@ -1,0 +1,43 @@
+@import "main-styles.css";
+
+/* ----------------------------------Intro Line---------------------------------- */
+#sec-1-grid {
+    display: grid;
+    margin: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+}
+#intro-name{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    
+}
+#intro-name span {
+    color: var(--primary-color);
+}
+#intro-par{
+    grid-column: 1 / 4;
+    grid-row: 5;
+}
+#intro-cap {
+    grid-column: 4/ 5;
+    grid-row: 5;
+}
+
+
+
+ /* ----------------------------------Links to Pages---------------------------------- */
+#links {
+    text-align: right;
+    grid-column: 1 / 5;
+    grid-row: 8 / 10;
+}
+#links a {
+    text-decoration: none;
+}
+#links a h2{
+    display: block;
+    position:relative;
+}
