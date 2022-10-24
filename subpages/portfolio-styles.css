@@ -3,7 +3,7 @@
 
 
 .spacer {
-    height: 100vw;
+    height: 20vw;
 }
 
 .content {
@@ -50,7 +50,7 @@
     .port-container {
         display: flex;
         flex-direction: column;
-        width: 75vw;
+        width: 95vw;
     }
 
 }
@@ -64,3 +64,20 @@
 #log-cans {
     background-image: url("../img/port-items/log-cans.png");
 }
+
+#lb-bag {
+    background-image: url("../img/port-items/lb-bean-bag.png");
+}
+
+#sustainable-icon {
+    background-image: url("../img/port-items/sustainable-arms.png");
+}
+
+#humanities-mock {
+    background-image: url("../img/port-items/humanities-mock.png");
+}
+
+#lb-logo {
+    background-image: url("../img/port-items/lb-logo.png");
+}
+
