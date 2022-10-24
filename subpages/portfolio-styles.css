@@ -2,7 +2,6 @@
 @import "..index-styles.css";
 
 
-
 .spacer {
     height: 100vw;
 }
@@ -40,6 +39,20 @@
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width:600px){
+
+    .content {
+        margin: 10px;
+    }
+
+    .port-container {
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+    }
+
 }
 
 /* ---------------------------------Portfolio Items---------------------------------- */
