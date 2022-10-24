@@ -1,3 +1,6 @@
+
+// Home text slow scroll
+
 const title = document.getElementById("intro-name");
 
 window.addEventListener('scroll', function(){
@@ -8,6 +11,23 @@ window.addEventListener('scroll', function(){
     isElementInViewPort
 });
 
+// extend-o-nav
+
+// function menuExpand() {
+//     var nav = document.getElementsByClassName("nav");
+
+//     Array.from(nav).forEach((x) => {
+//     if (nav.style.display === "none") {
+//       nav.style.display = "block";
+//     } else {
+//       nav.style.display = "block";
+//     }
+//     })
+//     console.log("yeet");
+// }
+
+
+// grab details about an element 
 
 function isElementInViewPort(element){
         let rect = element.getBoundingClientRect();
