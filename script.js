@@ -11,22 +11,6 @@ window.addEventListener('scroll', function(){
     isElementInViewPort
 });
 
-// extend-o-nav
-
-// function menuExpand() {
-//     var nav = document.getElementsByClassName("nav");
-
-//     Array.from(nav).forEach((x) => {
-//     if (nav.style.display === "none") {
-//       nav.style.display = "block";
-//     } else {
-//       nav.style.display = "block";
-//     }
-//     })
-//     console.log("yeet");
-// }
-
-
 // grab details about an element 
 
 function isElementInViewPort(element){
@@ -50,5 +34,21 @@ let topEle = document.getElementById('intro-name');
 let bottomEle = document.getElementById('links');
     console.log("is bottom element visible ", isElementInViewPort(bottomEle));
 
+let isNav = document.getElementById('nav');
+    console.log("is bottom element visible ", isElementInViewPort(isNav));
+
+
 console.log(isElementInViewPort(topEle));
   
+
+// Back to top button
+const backToTopBtn = document.getElementById("back-to-top-btn");
+
+function onVisibility(){
+    if (isElementInViewPort(nav) = false) {
+        backToTopBtn.style.visibility = 'visible'
+    }
+    else {
+        backToTopBtn.style.visibility = 'hidden'
+    }
+}
