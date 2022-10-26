@@ -17,6 +17,7 @@
 .sidebar {
     flex: 1 1 30%;
     max-width: 300px;
+    
 }
 
 .body-content {
@@ -55,6 +56,27 @@
 
 }
 
+.back-to-top-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: var(--black-color);
+    background-color: var(--white-color);
+    background-image: url(../img/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    rotate: -90deg;
+    transition: .5s;
+
+    right: 20px;
+    bottom: 20px;
+
+    display: none;
+}
+
+
 /* ---------------------------------Portfolio Items---------------------------------- */
 
 #joy-design {
@@ -81,3 +103,14 @@
     background-image: url("../img/port-items/lb-logo.png");
 }
 
+#noodles-mock {
+    background-image: url("../img/port-items/noodles-mock.png");
+}
+
+#eyeglass-article {
+    background-image: url("../img/port-items/eyeglass-article.png");
+}
+
+#panera-card {
+    background-image: url("../img/port-items/Panera\ Bread\ Giftcard\ Mockup.png");
+}
