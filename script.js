@@ -8,3 +8,9 @@ window.addEventListener('scroll', function(){
     
     title.style.top = value * .6 + 'px';
 });
+
+var introPar = document.getElementById("intro-par");
+
+function onLoadfadeUp(element){
+    
+}

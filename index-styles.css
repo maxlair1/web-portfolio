@@ -12,6 +12,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
+    animation: fadeUp 1s;
 }
 
 @media screen and (max-width: 600px) {
@@ -45,15 +46,28 @@
 #intro-name span {
     color: var(--primary-color);
 }
+
 #intro-par{
     grid-column: 1 / 4;
     grid-row: 5;
+    animation: fadeUp 2s;
 }
+
 #intro-cap {
     grid-column: 4/ 5;
     grid-row: 5;
+    animation: fadeUp 2s;
 }
 
+@keyframes fadeUp{
+    from{
+        transform: translate(0, 6vh);
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
 
 
  /* ----------------------------------Links to Pages---------------------------------- */
