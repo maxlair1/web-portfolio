@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <header>
-    <nav>
+    <nav id="nav">
         <ol>
             <a class="link-faded" href="../index.html">home</a>
             <a class="link-active" href="subpages/portfolio.html">portfolio</a>
@@ -29,10 +29,6 @@
 <body>
 <section class="spacer"></section>
 <section class="content">
-    <div id="back-to-top-btn">
-        <img src="">
-    </div>
-    <circle></circle>
     <div class="sidebar">
         <h3>
             From here, you can find some of the projects that I am proud of, or have defined my design journey up until now. Take a gander, and I would love to know what speaks to you.
@@ -45,17 +41,23 @@
             Portfolio
         </h2>
         <div class="port-container">
-            <div class="port-item" id="joy-design">   
+            <div class="port-item" id="joy-design">
+                Joy Etching Ilustration   
             </div>
-            <div class="port-item" id="log-cans">               
+            <div class="port-item" id="log-cans"> 
+                Loggin' Day Distilled Tea              
             </div>
             <div class="port-item" id="lb-bag">
+                Local Bean Coffee Bean Bag
             </div>
             <div class="port-item" id="sustainable-icon">
+                Sustainable Use Icon
             </div>
             <div class="port-item" id="humanities-mock">
+                Humanities Logo
             </div>
             <div class="port-item" id="noodles-mock">
+                Red Ramen Noodle Shop Menu
             </div>
             <div class="port-item" id="lb-logo">
             </div>
@@ -66,11 +68,9 @@
     </div>
 
 </section> 
-
-<!-- Scripts -->
-<script type="text/javascript" src="portfolio.js"></script>
-
+<a href="#top" id="back-to-top-btn" onload="hideShowReturnToTop()"></a>
 </body>
+
 <footer>
     <img src="../img/max-lair-logo.svg"class="footer-icon">
     <div class="pages">
@@ -100,7 +100,8 @@
 
 </footer>
 
-
+<!-- Scripts -->
+<script type="text/javascript" src="portfolio.js"></script>
 
 
 </html>

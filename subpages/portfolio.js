@@ -1,8 +1,8 @@
 
 // grab details about an element 
 
-function isElementInViewPort(element){
-    let rect = element.getBoundingClientRect();
+function isElementInViewPort(e){
+    let rect = e.getBoundingClientRect();
     console.log("the Bounding Rect of element is ", rect)
     //gets the height of the whole window.
     let viewPortBottom = window.innerHeight || document.documentElement.clientHeight;
@@ -13,25 +13,27 @@ function isElementInViewPort(element){
         isLeftInViewPort = rect.left >= 0,
         isBottomInViewPort = rect.bottom <= viewPortBottom,
         isRightInViewPort = rect.right <= viewPortRight;
-    
+
 return (isTopInViewPort && isLeftInViewPort && isBottomInViewPort && isRightInViewPort);
 }
-
-let isNav = document.getElementById('nav');
-console.log("is bottom element visible ", isElementInViewPort(isNav));
-
-
-console.log(isElementInViewPort(topEle));
-
 
 // Back to top button
 const backToTopBtn = document.getElementById("back-to-top-btn");
 
-function onVisibility(){
-if (isElementInViewPort(nav) = false) {
-    backToTopBtn.style.visibility = 'visible'
+function hideShowReturnToTop(){
+    let value = window.scrollY;
+    console.log(value, "scrollY");
+    if(value >= 1000){
+        backToTopBtn.style.visibility = 'visible'
+    }
+    else {
+        backToTopBtn.style.visibility = 'hidden'
+    }
+    
 }
-else {
-    backToTopBtn.style.visibility = 'hidden'
-}
-}
+hideShowReturnToTop()
+
+
+window.addEventListener('scroll', function(){
+    hideShowReturnToTop();
+})
