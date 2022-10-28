@@ -246,6 +246,45 @@ footer p {
 
 }
 
+/*  ---------------------------------- Animations ---------------------------------- */
+
+
+.animation-fadeup{
+    animation: fadeUp 1s;
+}
+
+@keyframes fadeUp{
+    0%{
+        visibility: hidden;
+    }
+    1%{
+        visibility: visible;
+        transform: translate(0, 6vh);
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.animation-fadedown {
+    animation: fadeDown 1s;
+}
+
+@keyframes fadeDown{
+    0%{
+        visibility: visible;
+    }
+    1%{
+        opacity: 100%;
+    }
+    100%{
+        visibility: hidden;
+        transform: translate(0, -6vh);
+        opacity: 0%;
+    }
+}
+
 /*  ---------------------------------- Media Queries ---------------------------------- */
 
 @media screen and (max-width: 600px){

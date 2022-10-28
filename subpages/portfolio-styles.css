@@ -12,6 +12,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    animation: fadeUp 1s;
 }
 
 .sidebar {
@@ -40,6 +42,7 @@
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 
 @media screen and (max-width:600px){
@@ -53,7 +56,6 @@
         flex-direction: column;
         width: 95vw;
     }
-
 }
 
 #back-to-top-btn {

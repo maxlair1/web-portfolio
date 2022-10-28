@@ -1,9 +1,10 @@
+const backToTopBtn = document.getElementById("back-to-top-btn");
 
 // grab details about an element 
 
-function isElementInViewPort(e){
-    let rect = e.getBoundingClientRect();
-    console.log("the Bounding Rect of element is ", rect)
+function isElementInViewPort(element){
+    let rect = element.getBoundingClientRect();
+    // console.log("the Bounding Rect of element is ", rect)
     //gets the height of the whole window.
     let viewPortBottom = window.innerHeight || document.documentElement.clientHeight;
 
@@ -18,15 +19,16 @@ return (isTopInViewPort && isLeftInViewPort && isBottomInViewPort && isRightInVi
 }
 
 // Back to top button
-const backToTopBtn = document.getElementById("back-to-top-btn");
 
 function hideShowReturnToTop(){
     let value = window.scrollY;
     console.log(value, "scrollY");
     if(value >= 1000){
         backToTopBtn.style.visibility = 'visible'
+        backToTopBtn.classList.add("animation-fadeup");
     }
     else {
+        backToTopBtn.classList.remove("animation-fadeup");
         backToTopBtn.style.visibility = 'hidden'
     }
 }

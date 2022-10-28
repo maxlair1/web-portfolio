@@ -32,6 +32,5 @@ window.addEventListener('scroll', function(){
     if(isElementInViewPort(heroLinks)){
         heroLinks.style.visibility = "visible";
         heroLinks.classList.add("animation-fadeup");
-    }else{
     }
 })
