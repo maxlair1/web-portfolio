@@ -8,7 +8,7 @@
     gap: 50px;
     grid-auto-rows: minmax(100px, auto);
 }
-#intro-name{
+#hero-name{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -43,17 +43,17 @@
 }
 
 
-#intro-name span {
+#hero-name span {
     color: var(--primary-color);
 }
 
-#intro-par{
+#hero-par{
     grid-column: 1 / 4;
     grid-row: 5;
     animation: fadeUp 2s;
 }
 
-#intro-cap {
+#hero-cap {
     grid-column: 4/ 5;
     grid-row: 5;
     animation: fadeUp 2s;
@@ -71,15 +71,15 @@
 
 
  /* ----------------------------------Links to Pages---------------------------------- */
-#links {
+#hero-links {
     text-align: right;
     grid-column: 1 / 5;
     grid-row: 8 / 10;
 }
-#links a {
+#hero-inks a {
     text-decoration: none;
 }
-#links a h2{
+#hero-links a h2{
     display: block;
     position:relative;
 }
