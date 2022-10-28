@@ -1,19 +1,20 @@
+const heroName = document.getElementById("hero-name");
+const heroLinks = document.getElementById("hero-links");
 
 // Home text slow scroll
 
-const title = document.getElementById("hero-name");
 
 window.addEventListener('scroll', function(){
     var value = window.scrollY
     
-    title.style.top = value * .6 + 'px';
+    heroName.style.top = value * .6 + 'px';
 });
 
 // grab details about an element 
 
 function isElementInViewPort(element){
     let rect = element.getBoundingClientRect();
-    console.log("the Bounding Rect of element is ", rect)
+    // console.log("the Bounding Rect of element is ", rect)
     //gets the height of the whole window.
     let viewPortBottom = window.innerHeight || document.documentElement.clientHeight;
 
@@ -27,14 +28,10 @@ function isElementInViewPort(element){
 return (isTopInViewPort && isLeftInViewPort && isBottomInViewPort && isRightInViewPort);
 }
 
-var heroLinks = document.getElementById("hero-links");
-
-function onLoadfadeUp(element){
-    isElementInViewPort(element)
-    if(isTopInViewPort = true){
-        element.classList.add('MyClass');
-    } else {
-
+window.addEventListener('scroll', function(){
+    if(isElementInViewPort(heroLinks)){
+        heroLinks.style.visibility = "visible";
+        heroLinks.classList.add("animation-fadeup");
+    }else{
     }
-
-}
+})

@@ -29,10 +29,7 @@ function hideShowReturnToTop(){
     else {
         backToTopBtn.style.visibility = 'hidden'
     }
-    
 }
-hideShowReturnToTop()
-
 
 window.addEventListener('scroll', function(){
     hideShowReturnToTop();

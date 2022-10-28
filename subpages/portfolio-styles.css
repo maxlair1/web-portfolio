@@ -74,7 +74,7 @@
     right: 20px;
     bottom: 20px;
 
-    display: hidden;
+    visibility: hidden;
 }
 
 
@@ -110,8 +110,4 @@
 
 #eyeglass-article {
     background-image: url("../img/port-items/eyeglass-article.png");
-}
-
-#panera-card {
-    background-image: url("../img/port-items/Panera\ Bread\ Giftcard\ Mockup.png");
 }

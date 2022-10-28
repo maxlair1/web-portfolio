@@ -21,27 +21,6 @@
     }
 }
 
-/* #spinny {
-    position: absolute;
-    width: 300px;;
-    right: 200px;
-    top: 200px;
-
-    animation-name: spin;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-} */
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to{
-        transform:rotate(-360deg);
-    }
-}
-
 
 #hero-name span {
     color: var(--primary-color);
@@ -59,13 +38,41 @@
     animation: fadeUp 2s;
 }
 
+/* Animation Fade Up */
+
+.animation-fadeup{
+    animation: fadeUp 1s;
+}
+
 @keyframes fadeUp{
-    from{
+    0%{
+        visibility: hidden;
+    }
+    1%{
+        visibility: visible;
         transform: translate(0, 6vh);
         opacity: 0%;
     }
-    to{
+    100%{
         opacity: 100%;
+    }
+}
+
+.animation-fadedown {
+    animation: fadeDown 1s;
+}
+
+@keyframes fadeDown{
+    0%{
+        visibility: visible;
+    }
+    1%{
+        opacity: 100%;
+    }
+    100%{
+        visibility: hidden;
+        transform: translate(0, 6vh);
+        opacity: 0%;
     }
 }
 
@@ -75,8 +82,10 @@
     text-align: right;
     grid-column: 1 / 5;
     grid-row: 8 / 10;
+
+    visibility: hidden;
 }
-#hero-inks a {
+#hero-links a {
     text-decoration: none;
 }
 #hero-links a h2{
