@@ -49,10 +49,26 @@
         min-width: 10px;
         font-size: 30px;
     }
+
+    #hero-cap {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width:600px) {
+    .sec-1-grid {
+        margin: 10px;
+    }
+    
     #hero-name {
         font-size: 75px;
+    }
+
+    #hero-links a h2 {
+        font-size: 25px;
+    }
+
+    .arrow {
+        height: 20px;
     }
 }
  /* ----------------------------------Links to Pages---------------------------------- */
