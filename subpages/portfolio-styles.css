@@ -42,7 +42,11 @@
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+}
+
+.port-item p {
+    margin: 5px;
+    font-size: 10px;
 }
 
 @media screen and (max-width:600px){
@@ -113,3 +117,23 @@
 #eyeglass-article {
     background-image: url("../img/port-items/eyeglass-article.png");
 }
+
+/* ---------------------------------Back to Portfolio Button---------------------------------- */
+
+
+.port-item-back-btn {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    cursor:pointer;
+}
+
+.port-item-back-btn img {
+    rotate: 180deg;
+    height: 12px;
+}
+

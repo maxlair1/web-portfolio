@@ -11,20 +11,25 @@ font weights: 300,400,500,600,700,800,900
 
 /* ----------------------------------Variables---------------------------------- */
 :root {
-    --primary-color: #256B49;
+    --primary-color: #ffee02;
     --white-color: #ffffff;
     --black-color: #313131;
+    --black-color-inactive: #31313180;
+    --background-color: #e4e3da;
     --text-color: #313131;
     --font-main: 'Inter', sans-serif;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
+    --custom-cursor: url("img/customer-cursor.svg"), auto;
 }
 
 /* -------------------------------------MAIN------------------------------------- */
 html {
     scroll-behavior: smooth;
     margin: 0%;
+    background-color:var(--background-color);
+    cursor:var(--custom-cursor)
 }
 
 body {
@@ -82,6 +87,22 @@ h3 {
     color: #2D2D2D;
 }
 
+h4 {
+    padding:0px;
+    margin:0px;
+
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14pt;
+    line-height: 142%;
+    /* or 28px */
+
+    letter-spacing: -0.04em;
+
+    color: #2d2d2d83;
+}
+
 /* ----------------------------------NAVIGATION / HEADER BAR---------------------------------- */
 nav {
     display: flex;
@@ -113,7 +134,7 @@ nav a {
 }
 
 .link-faded {
-    opacity: 50%;
+    color: var(--black-color-inactive) ;
 }
 
 .nav-x {
@@ -284,6 +305,54 @@ footer p {
         opacity: 0%;
     }
 }
+
+/* YELLOW HOVER ANIMATION - FROM LEFT */
+    .hover-yellow-left {
+        position: relative;
+    }
+
+    .hover-yellow-left::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #ffee02;
+        transform-origin: bottom left;
+        transition: transform 0.25s ease-out;
+        z-index: -1;
+    }
+
+    .hover-yellow-left:hover::after{
+        transform: scaleX(1);
+        z-index: -1;
+    }
+    
+/* YELLOW HOVER ANIMATION - FROM RIGHT */
+    .hover-yellow-right {
+        position: relative;
+    }
+
+    .hover-yellow-right::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #ffee02;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        z-index: -1;
+    }
+
+    .hover-yellow-right:hover::after{
+        transform: scaleX(1);
+        z-index: -1;
+    }
 
 /*  ---------------------------------- Media Queries ---------------------------------- */
 
