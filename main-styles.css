@@ -134,8 +134,12 @@ nav a {
     color: var(--black-color-inactive) ;
 }
 
-.nav-x {
-    display: none;
+#box {
+    visibility: hidden;
+}
+
+#x-box {
+    visibility: hidden;
 }
 
 /* -------------------------------Responsive Nav------------------------------------- */
@@ -153,7 +157,7 @@ nav a {
 
         visibility: hidden;
 
-        transition: 2s;
+        transition: 1s;
     }
     
     nav ol{
@@ -161,11 +165,11 @@ nav a {
         font-size: xxx-large;
     }
 
-    .nav-x {
-        display: block;
+    #x-box {
+       visibility: hidden;
     }
 
-    .box {
+    #box {
         top: 0%;
         right: 0%;
         width: 60px;
@@ -176,8 +180,12 @@ nav a {
         background-color: var(--background-color);
         border-radius: 10px;
     }
+    #box:hover {
+        transition: .5s;
+        background-color: #ffee02;
+    }
 
-    .x-box {
+    #x-box {
         top: 0%;
         right: 0%;
         width: 60px;
