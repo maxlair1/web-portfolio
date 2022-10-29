@@ -55,7 +55,7 @@
     }
 }
 @media screen and (max-width: 400px) {
-    .sec-1-grid {
+    #sec-1-grid {
         margin: 10px;
     }
     

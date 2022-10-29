@@ -1,5 +1,8 @@
 const heroName = document.getElementById("hero-name");
 const heroLinks = document.getElementById("hero-links");
+const nav = document.getElementById("nav");
+const navBox = document.getElementById('box');
+const navX= document.getElementById('x-box');
 
 // Home text slow scroll
 
@@ -33,4 +36,16 @@ window.addEventListener('scroll', function(){
         heroLinks.style.visibility = "visible";
         heroLinks.classList.add("animation-fadeup");
     }
-})
+});
+
+// Responsive Nav
+
+function navClick(){
+    console.log('function is working')
+    if(nav.style.visibility == 'hidden'){
+        nav.style.visibility = 'visible';
+        window.overflowY = 'hidden';
+        navBox.style.visbility = 'hidden';
+        navX.style.visibility = 'visible';
+    };
+};

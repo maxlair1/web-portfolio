@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Max Lair Portfolio</title>
+    <script>
+        const nav = document.getElementById("nav");
+        const navBox = document.getElementById('box');
+        const navX= document.getElementById('x-box');
+        navClick()
+    </script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="main-styles.css"/>
@@ -24,8 +30,8 @@
             <a class="link-faded hover-yellow-left" href="mailto: max@lairfamily.com">contact me</a>
         </ol>
     </nav>
-    <img class="box" src="img/square.svg" onclick="">
-    <img class="x-box" src="img/x-square.svg" onclick="">
+    <img id="box" href="javascript:void(0);" src="img/square.svg" onclick="navClick()">
+    <img id="x-box" href="javascript:void(0);" src="img/x-square.svg" onclick="navClick()">
     </a>
 </header>
 <body>

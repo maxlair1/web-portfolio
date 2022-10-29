@@ -162,7 +162,7 @@ nav a {
     
     nav ol{
         flex-direction: column;
-        font-size: xxx-large;
+        font-size: 70px;
     }
 
     #x-box {
