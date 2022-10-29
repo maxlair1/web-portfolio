@@ -140,7 +140,7 @@ nav a {
 
 /* -------------------------------Responsive Nav------------------------------------- */
 
-/* @media screen and (max-width: 600px){
+@media screen and (max-width: 600px){
     
     nav {
         top: 0%;
@@ -151,7 +151,7 @@ nav a {
         height: 100vh;
         width: 100vw;
 
-        display: none;
+        visibility: hidden;
 
         transition: 2s;
     }
@@ -168,23 +168,25 @@ nav a {
     .box {
         top: 0%;
         right: 0%;
-        width: 80px;
-        padding: 40px;
-        position: absolute;
-        display: block;
+        width: 60px;
+        margin: 40px;
+        position: fixed;
+        visibility: visible;
         cursor: pointer;
+        background-color: var(--background-color);
+        border-radius: 10px;
     }
 
     .x-box {
         top: 0%;
         right: 0%;
-        width: 80px;
+        width: 60px;
         padding: 40px;
-        position: absolute;
-        display: none;
+        position: fixed;
+        visibility: hidden;
         cursor: pointer;
     }
-} */
+}
 
 /* ----------------------------------Footer Styles---------------------------------- */
 

@@ -54,7 +54,7 @@
         font-size: 16px;
     }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width: 400px) {
     .sec-1-grid {
         margin: 10px;
     }
@@ -64,11 +64,11 @@
     }
 
     #hero-links a h2 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .arrow {
-        height: 20px;
+        height: 15px;
     }
 }
  /* ----------------------------------Links to Pages---------------------------------- */
