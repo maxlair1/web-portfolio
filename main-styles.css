@@ -174,7 +174,7 @@ nav a {
         top: 0%;
         right: 0%;
         width: 60px;
-        margin: 40px;
+        margin: 20px;
         position: fixed;
         visibility: visible;
         cursor: pointer;
@@ -190,7 +190,7 @@ nav a {
         top: 0%;
         right: 0%;
         width: 60px;
-        padding: 40px;
+        margin: 20px;
         position: fixed;
         visibility: hidden;
         z-index: 12;
