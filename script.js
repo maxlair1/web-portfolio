@@ -40,14 +40,12 @@ window.addEventListener('scroll', function(){
 
 // Responsive Nav
 
-navBox.addEventListener('click','tap', function(){
+navBox.addEventListener('click', function(){
     if(nav.style.visibility == 'hidden'){
         nav.style.visibility = 'visible';
-        window.overflowY = 'hidden';
-        navBox.style.visbility = 'hidden';
         navX.style.visibility = 'visible';
-        document.scrollY.
     }else{
         nav.style.visibility = 'hidden';
-    }
+        navX.style.visibility = 'hidden';
+    };
 });
