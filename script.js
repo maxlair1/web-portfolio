@@ -1,11 +1,26 @@
 const heroName = document.getElementById("hero-name");
 const heroLinks = document.getElementById("hero-links");
 var nav = document.getElementById("nav");
-var navBox = document.getElementById('box');
-var navX= document.getElementById('x-box');
+var navBox = document.getElementById('box')
+
+// Responsive Nav
+
+function toggleNav(){
+    var nav = document.getElementById("nav");
+    var navBox = document.getElementById('box'); 
+    console.log(nav.style.visibility);
+
+    if(nav.style.visibility != 'visible'){
+        console.log("toggleNav if");
+        nav.style.visibility = 'visible';
+    }else{
+        console.log("toggleNav else");
+        nav.style.visibility = 'hidden';
+        console.log("toggleNav else finished");
+    };
+};
 
 // Home text slow scroll
-
 
 window.addEventListener('scroll', function(){
     var value = window.scrollY
@@ -38,14 +53,3 @@ window.addEventListener('scroll', function(){
     }
 });
 
-// Responsive Nav
-
-navBox.addEventListener('click', function(){
-    if(nav.style.visibility == 'hidden'){
-        nav.style.visibility = 'visible';
-        navX.style.visibility = 'visible';
-    }else{
-        nav.style.visibility = 'hidden';
-        navX.style.visibility = 'hidden';
-    };
-});
