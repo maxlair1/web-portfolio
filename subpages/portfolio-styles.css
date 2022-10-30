@@ -68,7 +68,7 @@
     border-radius: 100px;
     border-style: solid;
     border-color: var(--black-color);
-    background-color: var(--white-color);
+    background-color: var(--background-color);
     background-image: url(../img/arrow.png);
     background-position: center;
     background-repeat: no-repeat;
