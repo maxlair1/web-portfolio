@@ -1,8 +1,8 @@
 const heroName = document.getElementById("hero-name");
 const heroLinks = document.getElementById("hero-links");
-const nav = document.getElementById("nav");
-const navBox = document.getElementById('box');
-const navX= document.getElementById('x-box');
+var nav = document.getElementById("nav");
+var navBox = document.getElementById('box');
+var navX= document.getElementById('x-box');
 
 // Home text slow scroll
 
@@ -40,12 +40,14 @@ window.addEventListener('scroll', function(){
 
 // Responsive Nav
 
-function navClick(){
-    console.log('function is working')
+navBox.addEventListener('click','tap', function(){
     if(nav.style.visibility == 'hidden'){
         nav.style.visibility = 'visible';
         window.overflowY = 'hidden';
         navBox.style.visbility = 'hidden';
         navX.style.visibility = 'visible';
-    };
-};
+        document.scrollY.
+    }else{
+        nav.style.visibility = 'hidden';
+    }
+});

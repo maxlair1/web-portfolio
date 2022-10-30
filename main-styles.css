@@ -108,7 +108,7 @@ nav {
     padding-top:25px;
     padding-left:40px;
     padding-right:40px;
-    z-index: 99999;
+    z-index: 10;
 }
 
 nav ol {
@@ -179,6 +179,7 @@ nav a {
         cursor: pointer;
         background-color: var(--background-color);
         border-radius: 10px;
+        z-index: 12;
     }
     #box:hover {
         transition: .5s;
@@ -193,6 +194,7 @@ nav a {
         position: fixed;
         visibility: hidden;
         cursor: pointer;
+        z-index: 11;
     }
 }
 
