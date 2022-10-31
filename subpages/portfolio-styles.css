@@ -37,6 +37,8 @@
     height: 0;
     padding-top: 66.64%;
 
+    background-clip: border-box;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,8 +56,6 @@
 }
 
 .port-item p {
-    margin: 5px;
-    font-size: 10px;
 }
 
 @media screen and (max-width:600px){
