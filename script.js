@@ -10,12 +10,13 @@ function toggleNav(){
     var navBox = document.getElementById('box'); 
     console.log(nav.style.visibility);
 
-    if(nav.style.visibility != 'visible'){
+    if(nav.style.display != 'none'){
         console.log("toggleNav if");
-        nav.style.visibility = 'visible';
+        nav.style.display = 'none';
     }else{
         console.log("toggleNav else");
-        nav.style.visibility = 'hidden';
+        nav.style.display = 'block';
+        nav.style.classList.add(".animation-fadedown");
         console.log("toggleNav else finished");
     };
 };

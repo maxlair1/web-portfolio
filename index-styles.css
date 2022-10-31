@@ -31,7 +31,7 @@
     animation: fadeUp 2s;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
     #hero-name {
         position: static;
         font-size: 140px;
@@ -62,7 +62,7 @@
     }
 
     #hero-links a h2 {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .arrow {

@@ -155,7 +155,9 @@ nav a {
         height: 100vh;
         width: 100vw;
 
-        visibility: hidden;
+        display: none;
+
+        animation: navFadeDown .5s;
     }
     
     nav ol{
@@ -305,6 +307,20 @@ footer p {
         visibility: hidden;
         transform: translate(0, -6vh);
         opacity: 0%;
+    }
+}
+
+.animation-navfadedown {
+    animation: navFadeDown .5s;
+}
+
+@keyframes navFadeDown{
+    from{
+        opacity: 0%;
+        transform: translate(0, -6vh);
+    }
+    to{
+        opacity: 100%;
     }
 }
 
