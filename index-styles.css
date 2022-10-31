@@ -34,8 +34,10 @@
 @media screen and (max-width: 950px) {
     #hero-name {
         position: static;
-        font-size: 100px;
+        font-size: 140px;
         margin-left: 0px;
+        margin-top: 40px;
+        text-align: left;
     }
     #sec-1-grid {
         margin-top: 20vh;
@@ -58,10 +60,6 @@
     #sec-1-grid {
         margin: 10px;
     }
-    
-    #hero-name {
-        font-size: 75px;
-    }
 
     #hero-links a h2 {
         font-size: 20px;
@@ -75,6 +73,7 @@
 
  #hero-links {
     margin-top: 200px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-self: flex-end;
