@@ -11,13 +11,11 @@ function toggleNav(){
     console.log(nav.style.visibility);
 
     if(nav.style.display != 'none'){
-        console.log("toggleNav if");
+        // nav.style.classList.add(".animation-fadedown");
         nav.style.display = 'none';
     }else{
-        console.log("toggleNav else");
         nav.style.display = 'block';
-        nav.style.classList.add(".animation-fadedown");
-        console.log("toggleNav else finished");
+        ;
     };
 };
 
