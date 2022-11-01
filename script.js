@@ -10,11 +10,11 @@ function toggleNav(){
     var navBox = document.getElementById('box'); 
     console.log(nav.style.visibility);
 
-    if(nav.style.display != 'none'){
+    if(nav.style.display != 'block'){
         // nav.style.classList.add(".animation-fadedown");
-        nav.style.display = 'none';
-    }else{
         nav.style.display = 'block';
+    }else{
+        nav.style.display = 'none';
         ;
     };
 };

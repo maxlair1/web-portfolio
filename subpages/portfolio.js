@@ -1,4 +1,22 @@
 const backToTopBtn = document.getElementById("back-to-top-btn");
+var nav = document.getElementById("nav");
+var navBox = document.getElementById('box')
+
+// Responsive Nav
+
+function toggleNav(){
+    var nav = document.getElementById("nav");
+    var navBox = document.getElementById('box'); 
+    console.log(nav.style.visibility);
+
+    if(nav.style.display != 'block'){
+        // nav.style.classList.add(".animation-fadedown");
+        nav.style.display = 'block';
+    }else{
+        nav.style.display = 'none';
+        ;
+    };
+};
 
 // grab details about an element 
 

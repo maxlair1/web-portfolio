@@ -135,11 +135,11 @@ nav a {
 }
 
 #box {
-    visibility: hidden;
+    display: none;
 }
 
 #x-box {
-    visibility: hidden;
+    display: none;
 }
 
 /* -------------------------------Responsive Nav------------------------------------- */
@@ -157,7 +157,7 @@ nav a {
 
         display: none;
 
-        /* animation: navFadeDown .5s; */
+        animation: navFadeDown .5s;
     }
     
     nav ol{
@@ -170,6 +170,7 @@ nav a {
         top: 0%;
         right: 0%;
         width: 40px;
+        display: block;
         margin: 20px;
         position: fixed;
         cursor: pointer;
