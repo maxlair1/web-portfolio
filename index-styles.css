@@ -10,18 +10,17 @@
     gap: 50px;
 }
 
-.illustration-container {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: right;
+/* ----------------Hero name/illustration and media resize----------------*/
+
+.illustration-and-hero {
+    display: inline;
 }
 
 #me-illustration {
     width: 45vw;
     height: auto;
-    transform-origin: bottom right;
     float: right;
+    transform-origin: bottom right;
     opacity: 80%;
 }
 
@@ -30,6 +29,38 @@
     top: 0;
     animation: fadeUp 1s;
 }
+@media screen and (max-width: 1200px) {
+    #hero-name {
+        font-size: 125px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #hero-name {
+        font-size: 110px;
+    }
+}
+@media screen and (max-width: 900px) {
+    #hero-name {
+        position: static;
+        font-size: 14vw;
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+    .illustration-and-hero {
+        display: flex;
+        flex-direction: column;
+    }
+    #me-illustration {
+        width: 90vw;
+        height: auto;
+        transform-origin: bottom right;
+        float: right;
+        opacity: 80%;
+    }
+}
+
 
 .hero-type-cont {
     display: flex;
@@ -49,15 +80,9 @@
 }
 
 @media screen and (max-width: 900px) {
-    #hero-name {
-        position: static;
-        font-size: 140px;
-        margin-left: 0px;
-        margin-top: 40px;
-        text-align: left;
-    }
+
     #sec-1-grid {
-        margin-top: 20vh;
+        margin-top: 10vh;
     }
 
     .hero-type-cont {
