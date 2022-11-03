@@ -128,7 +128,7 @@
     gap: 10px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     max-width: 325px;
     
     visibility: hidden;
