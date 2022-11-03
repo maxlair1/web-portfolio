@@ -118,18 +118,34 @@
     margin-bottom: 200px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 70px;
 }
 
 .service {
     display: flex;
-    flex-direction: column;
     gap: 10px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    max-width: 325px;
     
     visibility: hidden;
+}
+
+.service img {
+    width: 200px;
+}
+
+#service--visual-and-branding {
+    flex: 1 1 1;
+}
+#service--illustration {
+    flex: 1 1 1;
+}
+#service--front-end-dev {
+    flex: 1 1 1;
 }
 
 .service h5 {
