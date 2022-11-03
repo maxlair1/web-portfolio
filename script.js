@@ -1,8 +1,14 @@
 const heroName = document.getElementById("hero-name");
 const heroLinks = document.getElementById("hero-links");
 var nav = document.getElementById("nav");
-var navBox = document.getElementById('box')
+var navBox = document.getElementById('box');
 
+var serviceContentOne = document.getElementById('service--visual-and-branding');
+var serviceContentTwo = document.getElementById('service--illustration');
+var serviceContentThree = document.getElementById('service--front-end-dev');
+
+
+console.log(serviceContentOne);
 // Responsive Nav
 
 function toggleNav(){
@@ -11,11 +17,11 @@ function toggleNav(){
     console.log(nav.style.visibility);
 
     if(nav.style.display != 'block'){
-        // nav.style.classList.add(".animation-fadedown");
+        // nav.classList.add("animation-navfadedown");
         nav.style.display = 'block';
     }else{
+        // nav.classList.add("animation-navfadeout");
         nav.style.display = 'none';
-        ;
     };
 };
 
@@ -45,10 +51,34 @@ function isElementInViewPort(element){
 return (isTopInViewPort && isLeftInViewPort && isBottomInViewPort && isRightInViewPort);
 }
 
+//fade in links 
+
 window.addEventListener('scroll', function(){
     if(isElementInViewPort(heroLinks)){
         heroLinks.style.visibility = "visible";
-        heroLinks.classList.add("animation-fadeup");
+        heroLinks.classList.add("animation-fadeup-1s");
     }
 });
 
+//fade in services
+
+window.addEventListener('scroll', function(){
+    if(isElementInViewPort(serviceContentOne)){
+        serviceContentOne.style.visibility = "visible";
+        serviceContentOne.classList.add("animation-fadeup-1s");
+    }
+});
+
+window.addEventListener('scroll', function(){
+    if(isElementInViewPort(serviceContentTwo)){
+        serviceContentTwo.style.visibility = "visible";
+        serviceContentTwo.classList.add("animation-fadeup-2s");
+    }
+});
+
+window.addEventListener('scroll', function(){
+    if(isElementInViewPort(serviceContentThree)){
+        serviceContentThree.style.visibility = "visible";
+        serviceContentThree.classList.add("animation-fadeup-3s");
+    }
+});

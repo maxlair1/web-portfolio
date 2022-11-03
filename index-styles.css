@@ -1,13 +1,30 @@
 @import "main-styles.css";
 
 /* ----------------------------------Intro Line---------------------------------- */
+
 #sec-1-grid {
     margin: 40px;
-    margin-top: 85vh;
+    margin-top: 30vh;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
+
+.illustration-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: right;
+}
+
+#me-illustration {
+    width: 45vw;
+    height: auto;
+    transform-origin: bottom right;
+    float: right;
+    opacity: 80%;
+}
+
 #hero-name{
     position: absolute;
     top: 0;
@@ -69,9 +86,45 @@
         height: 15px;
     }
 }
+/* ----------------------------------Links to Pages---------------------------------- */
+
+.services-container {
+    margin-top: 300px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    
+    visibility: hidden;
+}
+
+.service h5 {
+    word-wrap: break-word;
+    text-align: center;
+    justify-content: center;
+}
+
+.service h4 {
+    word-wrap: break-word;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
  /* ----------------------------------Links to Pages---------------------------------- */
 
- #hero-links {
+#hero-links {
     margin-top: 200px;
     margin-bottom: 100px;
     display: flex;

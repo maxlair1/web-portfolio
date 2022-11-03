@@ -100,6 +100,20 @@ h4 {
     color: #2d2d2d83;
 }
 
+h5 {
+    padding:0%;
+    margin:0px;
+    color: #2D2D2D;
+
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18pt;
+    line-height: 120%;
+    /* or 48px */
+    letter-spacing: -0.04em;
+}
+
 /* ----------------------------------NAVIGATION / HEADER BAR---------------------------------- */
 nav {
     display: flex;
@@ -134,11 +148,7 @@ nav a {
     color: var(--black-color-inactive) ;
 }
 
-#box {
-    display: none;
-}
-
-#x-box {
+#burger {
     display: none;
 }
 
@@ -157,7 +167,7 @@ nav a {
 
         display: none;
 
-        animation: navFadeDown .5s;
+        animation: navFadeDown .1s;
     }
     
     nav ol{
@@ -166,7 +176,7 @@ nav a {
     }
 
 
-    #box {
+    #burger {
         top: 0%;
         right: 0%;
         width: 40px;
@@ -264,8 +274,14 @@ footer p {
 /*  ---------------------------------- Animations ---------------------------------- */
 
 
-.animation-fadeup{
+.animation-fadeup-1s{
     animation: fadeUp 1s;
+}
+.animation-fadeup-2s{
+    animation: fadeUp 2s;
+}
+.animation-fadeup-3s{
+    animation: fadeUp 3s;
 }
 
 @keyframes fadeUp{
@@ -301,7 +317,7 @@ footer p {
 }
 
 .animation-navfadedown {
-    animation: navFadeDown .5s;
+    animation: navFadeDown .1s;
 }
 
 @keyframes navFadeDown{
@@ -311,6 +327,20 @@ footer p {
     }
     to{
         opacity: 100%;
+    }
+}
+
+.animation-navfadeout {
+    animation: navFadeOut .1s;
+}
+
+@keyframes navFadeOut{
+    from{
+        opacity: 100%;
+        transform: translate(0, 6vh);
+    }
+    to{
+        opacity: 0%;
     }
 }
 
