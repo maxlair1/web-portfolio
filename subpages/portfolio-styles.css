@@ -32,6 +32,10 @@
     grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
 }
 
+.port-container h4 {
+    margin: 20px;
+}
+
 .port-item {
     display: flex;
     width: 100%;
@@ -42,26 +46,11 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
-.port-item-full {
-    width: 100%;
-    height: 0;
-    padding-top: 66.64%;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
+s
 .project-badge {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row; 
 }
-
-
-
-
 
 @media screen and (max-width:600px){
 
