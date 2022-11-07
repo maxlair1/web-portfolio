@@ -28,6 +28,7 @@
     display: grid;
     grid-gap: 10px;
     padding-top: 25px;
+    margin-bottom:50px;
     grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
 }
 
@@ -103,9 +104,41 @@
     background-image: url("../img/port-items/log-cans.png");
 }
 
-#lb-bag {
-    background-image: url("../img/port-items/lb-bean-bag.png");
+#lb-logo {
+    background-image: url("../img/port-items/lb-logo/lb-logo.png");
 }
+
+    /* Logo and Branding stuff */
+
+    #lb-mock {
+        background-image: url("../img/port-items/lb-logo/lb-logo-mock.png");
+    }
+    
+    #lb-sketches {
+        background-image: url("../img/port-items/lb-logo/lb-sketches.png");
+    }
+
+    /* screens */
+
+    #lb-screen-connect {
+        background-image: url("../img/port-items/lb-logo/lb-screen-connect.png");
+    }
+
+    #lb-screen-map {
+        background-image: url("../img/port-items/lb-logo/lb-screen-map.png");
+    }
+
+    #lb-screen-store {
+        background-image: url("../img/port-items/lb-logo/lb-screen-store.png");
+    }
+
+    /* marketing and illustration */
+
+    #lb-bag {
+        background-image: url("../img/port-items/lb-logo/lb-bean-bag.png");
+    }
+
+
 
 #sustainable-icon {
     background-image: url("../img/port-items/sustainable-arms.png");
@@ -113,10 +146,6 @@
 
 #humanities-mock {
     background-image: url("../img/port-items/humanities-mock.png");
-}
-
-#lb-logo {
-    background-image: url("../img/port-items/lb-logo.png");
 }
 
 #noodles-mock {
