@@ -72,13 +72,13 @@ window.addEventListener('scroll', function(){
 window.addEventListener('scroll', function(){
     if(isElementInViewPort(serviceContentTwo)){
         serviceContentTwo.style.visibility = "visible";
-        serviceContentTwo.classList.add("animation-fadeup-2s");
+        serviceContentTwo.classList.add("animation-fadeup-1s");
     }
 });
 
 window.addEventListener('scroll', function(){
     if(isElementInViewPort(serviceContentThree)){
         serviceContentThree.style.visibility = "visible";
-        serviceContentThree.classList.add("animation-fadeup-3s");
+        serviceContentThree.classList.add("animation-fadeup-1s");
     }
 });
