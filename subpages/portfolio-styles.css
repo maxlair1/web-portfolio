@@ -101,8 +101,20 @@
     }
 
 #log-cans {
-    background-image: url("../img/port-items/log-cans.png");
+    background-image: url("../img/port-items/log-cans/log-cans.png");
 }
+
+    #log-can-closer {
+        background-image: url("../img/port-items/log-cans/log-can-closer.jpg");
+    }
+
+    #log-can-sketches {
+        background-image: url("../img/port-items/log-cans/log-can-sketches.png");
+    }
+
+    #log-can-concept {
+        background-image: url("../img/port-items/log-cans/log-can-concept.png");
+    }
 
 #lb-logo {
     background-image: url("../img/port-items/lb-logo/lb-logo.png");
