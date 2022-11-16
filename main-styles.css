@@ -16,9 +16,9 @@ font weights: 300,400,500,600,700,800,900
 :root {
     --white-color: #ffffff;
     --black-color: #313131;
-    --black-color-inactive: #31313180;
-    --background-color: #e4e3da;
-    --text-color: #313131;
+    --black-color-inactive: #817E75;
+    --background-color: #F0EDE0;
+    --text-color: #3A635C;
     --font-main: 'Inter', sans-serif;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -45,22 +45,21 @@ a {
 
 /* -------------------------------------Type Styles---------------------------------- */
 h1 {
-    color: #2D2D2D;
+    color: var(--text-color);
 
     font-family: var(--font-main);
-    font-style: normal;
     font-weight: 700;
+    font-style: normal;
     font-size: 8em;
-    line-height: 120%;
+    line-height: 100%;
     /* or 156px */
-    text-align: center;
     letter-spacing: -0.04em;
 }
 
 h2 {
     padding:0%;
     margin:0px;
-    color: #2D2D2D;
+    color: var(--text-color);
 
     font-family: var(--font-main);
     font-style: normal;
@@ -84,7 +83,7 @@ h3 {
 
     letter-spacing: -0.04em;
 
-    color: #2D2D2D;
+    color: var(--text-color);
 }
 
 h4 {
@@ -100,13 +99,13 @@ h4 {
 
     letter-spacing: -0.04em;
 
-    color: #2d2d2d83;
+    color: var(--text-color);
 }
 
 h5 {
     padding:0%;
     margin:0px;
-    color: #2D2D2D;
+    color: var(--text-color);
 
     font-family: var(--font-main);
     font-style: normal;
@@ -140,7 +139,7 @@ nav ol {
 
 nav a {
     text-decoration: none;
-    color: var(--black-color);
+    color: var(--text-color);
 }
 
 .link-active {
@@ -200,7 +199,7 @@ nav a {
 
 footer {
     margin:0px;
-    background-color: var(--black-color);
+    background-color: var(--text-color);
 
     display: grid;
     padding: 50px;
@@ -212,6 +211,7 @@ footer {
 .footer-icon {
     grid-column: 1 / 2;
     grid-row: 1;
+    width: 125px;
 }
 
 .foot-list-title {
@@ -360,7 +360,7 @@ footer p {
         height: 100%;
         bottom: 0;
         left: 0;
-        background-color: #ffee02;
+        background-color: #00FFD3;
         transform-origin: bottom left;
         transition: transform 0.25s ease-out;
         z-index: -1;
@@ -384,7 +384,7 @@ footer p {
         height: 100%;
         bottom: 0;
         left: 0;
-        background-color: #ffee02;
+        background-color: #00FFD3;
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
         z-index: -1;

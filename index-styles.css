@@ -21,7 +21,7 @@
     height: auto;
     float: right;
     transform-origin: bottom right;
-    opacity: 80%;
+    opacity: 100%;
 }
 
 #hero-name{
@@ -115,7 +115,7 @@
 
 .services-container {
     margin-top: 300px;
-    margin-bottom: 200px;
+    margin-bottom: 125px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -130,8 +130,11 @@
     align-items: center;
     justify-content: top;
     max-width: 325px;
-    
+    padding: 25px;
+    border-radius: 15px;
+    background-color: var(--text-color);
     visibility: hidden;
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
 }
 
 .service img {
@@ -152,12 +155,14 @@
     word-wrap: break-word;
     text-align: center;
     justify-content: center;
+    color: var(--background-color);
 }
 
 .service h4 {
     word-wrap: break-word;
     text-align: center;
     justify-content: center;
+    color: var(--background-color);
 }
 
 

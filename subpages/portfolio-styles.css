@@ -71,7 +71,7 @@
     height: 45px;
     border-radius: 100px;
     border-style: solid;
-    border-color: var(--black-color);
+    border-color: var(--text-color);
     background-color: var(--background-color);
     background-image: url(../img/arrow.png);
     background-position: center;
